@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: -'Roboto', 'Open Sans', sans-serif;
+  color: #333; /* Cor do texto para legibilidade */
+  line-height: 1.6; /* Espaçamento para conforto visual */
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif; /* Fontes mais clássicas para títulos */
+}
+
+a {
+  font-family: 'Poppins', sans-serif; /* Fonte moderna para links */
+  text-decoration: none;
+  color: #007bff; /* Azul para destaque */
+}
+
+button {
+  font-family: 'Lora', serif; /* Fonte estilosa para botões */
+  font-weight: bold;
+}
+
+html {
+  scroll-padding-top: 70px; /* Altura da navbar */
+}

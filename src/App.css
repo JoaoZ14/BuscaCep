@@ -1,0 +1,235 @@
+/* App.css atualizado */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fafcff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11);
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.header p {
+  font-size: 1rem;
+  margin: 8px 0 0;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.forms-container {
+  display: flex;
+  gap: 2rem;
+  height: 240px;
+}
+
+.search-section.compact {
+  flex: 1;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(50, 50, 93, 0.05);
+  border: 1px solid #e8eff7;
+}
+
+.search-section.compact h2 {
+  font-size: 1.2rem;
+  margin: 0 0 1.2rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-grid.compact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  height: calc(100% - 36px);
+}
+
+.compact-input {
+  width: 200px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 2px solid #e8eff7;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: #f8fafc;
+}
+
+.compact-input:focus {
+  border-color: #4a90e2;
+  background: white;
+  box-shadow: 0 2px 6px rgba(74, 144, 226, 0.15);
+  outline: none;
+}
+
+.uf-input {
+  max-width: 60px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cep-input {
+  max-width: 140px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-family: monospace;
+}
+
+.compact-button {
+  grid-column: span 2;
+  padding: 12px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.compact-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.25);
+}
+
+.compact-button:disabled {
+  background: #e8eff7;
+  color: #a0aec0;
+}
+
+.divider.vertical {
+  width: 1px;
+  background: linear-gradient(to bottom, transparent 0%, #e8eff7 50%, transparent 100%);
+}
+
+.results-container {
+  flex: 1;
+  min-height: 180px;
+  background: transparent;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.result-card.compact {
+  padding: 1.2rem;
+  margin: 0;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e8eff7;
+  transition: all 0.2s ease;
+}
+
+.result-card.compact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.1);
+}
+
+.result-grid.compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.result-value {
+  font-size: 1rem;
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.result-grid.compact small {
+  font-size: 0.8rem;
+  color: #718096;
+  letter-spacing: 0.5px;
+}
+
+.cep-result.compact {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #cfe8ff;
+  text-align: center;
+}
+
+.cep-number {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  font-family: monospace;
+  color: #2c3e50;
+  letter-spacing: 2px;
+}
+
+.secondary-button.small {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background: linear-gradient(135deg, #66bb6a 0%, #4caf50 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.error-message {
+  font-size: 0.9rem;
+  padding: 12px;
+  background: #fff5f5;
+  color: #c53030;
+  border-radius: 8px;
+  border: 1px solid #fed7d7;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* Adicionar no início do CSS para ícones */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+}
