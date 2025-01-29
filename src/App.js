@@ -60,7 +60,7 @@ function App() {
       const response = await fetch(
         `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
           enderecoCompleto
-        )}&key=AIzaSyCsWzVJmJUxqEnM2Yxr2-6TMg07cyenYmM`
+        )}&key=AIzaSyAUjeYTNJ7oHa5uZ-bGtBASpILPUPBqJ_I`
       );
       const data = await response.json();
 
